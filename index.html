@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagramlogo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+            background-color: #000;
+            display: grid;
+            place-items: center;
+        }
+        .circle1{
+            height: 15rem;
+            width: 15rem;
+            background: radial-gradient(circle at 30% 107%, #fdf497 5%, #fdf497 5% , #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            border-radius: 3rem;
+            display: grid;
+            place-items: center;
+        }   
+        .circle2{
+            width: 11rem;
+            height: 11rem;
+            border: 1rem solid #fff;
+            border-radius: 3rem;
+            background-color: transparent;
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+        .circle2::before{
+            content: "";
+            width: 3.8rem;
+            height: 3.8rem;
+            border: 1rem solid #fff;
+            border-radius: 50%;
+            background-color: transparent;
+            position: absolute;
+        }
+        .circle2::after{
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            border: .15rem solid #fff;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: 1rem;
+            right: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="circle1">
+           <div class="circle2"></div>
+        </div>
+    </div>
+</body>
+</html>
